@@ -196,6 +196,29 @@ html * {
   -webkit-font-smoothing: antialiased;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 body {
   background: #faf8f5;
   font-size: 15px;
@@ -244,7 +267,8 @@ p.lead strong {
 
 hr {
   margin: 30px 0 30px 0;
-  border-color: #d9e1e6;
+  border: none;
+  /* border-color: #d9e1e6; */
   opacity: 1;
 }
 hr.more_margin {
@@ -2390,21 +2414,29 @@ textarea.form-control {
 
 @font-face {
     font-family: "Candara V2";
-    src: url("https://db.onlinewebfonts.com/t/8daa0f2304ee100fe3888d5b7307e64f.eot");
-    src: url("https://db.onlinewebfonts.com/t/8daa0f2304ee100fe3888d5b7307e64f.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/8daa0f2304ee100fe3888d5b7307e64f.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/8daa0f2304ee100fe3888d5b7307e64f.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/8daa0f2304ee100fe3888d5b7307e64f.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/8daa0f2304ee100fe3888d5b7307e64f.svg#Candara V2")format("svg");
+    src: url("fonts/candara/Candara V2.eot");
+    src: url("fonts/candara/Candara V2.eot")format("embedded-opentype"),
+    url("fonts/candara/Candara V2.woff2")format("woff2"),
+    url("fonts/candara/Candara V2.woff")format("woff"),
+    url("fonts/candara/Candara V2.ttf")format("truetype"),
+    url("fonts/candara/Candara V2.svg#Candara V2")format("svg");
 }
 
 @font-face {
-    font-family: "NPSGeo1940sPress";
-    src: url("https://db.onlinewebfonts.com/t/c55360ca7ee301e3aa546f5e8bdeb93e.eot");
-    src: url("https://db.onlinewebfonts.com/t/c55360ca7ee301e3aa546f5e8bdeb93e.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/c55360ca7ee301e3aa546f5e8bdeb93e.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/c55360ca7ee301e3aa546f5e8bdeb93e.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/c55360ca7ee301e3aa546f5e8bdeb93e.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/c55360ca7ee301e3aa546f5e8bdeb93e.svg#NPSGeo1940sPress")format("svg");
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url('fonts/monserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url('fonts/monserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: local('Caveat'), url('fonts/caveat/Caveat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 500;
 }
 
