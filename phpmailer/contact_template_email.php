@@ -23,12 +23,12 @@ try {
     }
 
    // Form fields
-    $test_field = $_POST['country'];
     $name_contact     = $_POST['name_contact'];
     $lastname_contact     = $_POST['lastname_contact'];
     $email_contact    = $_POST['email_contact'];
     $phone_contact    = $_POST['phone_contact'];
     $message_contact = $_POST['message_contact'];
+    $verify_contact   = $_POST['verify_contact'];
 
     if(trim($name_contact) == '') {
     echo '<div class="error_message">You must enter your Name.</div>';
