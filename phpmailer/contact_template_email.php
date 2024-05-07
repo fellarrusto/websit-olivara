@@ -12,7 +12,7 @@ try {
 
     //Recipients - main edits
     $mail->setFrom('info@domain.com', 'Message from B&B');             // Email Address and Name FROM
-    $mail->addAddress('info@domain.com', 'Jhon Doe');                  // Email Address and Name TO - Name is optional
+    $mail->addAddress('filippoleonelli1@gmail.com', 'Jhon Doe');                  // Email Address and Name TO - Name is optional
     $mail->addReplyTo('noreply@domain.com', 'Message from B&B');       // Email Address and Name NOREPLY
     $mail->isHTML(true);                                                       
     $mail->Subject = 'Message from B&B';                                // Email Subject    
@@ -23,12 +23,12 @@ try {
     }
 
    // Form fields
+    $test_field = $_POST['country'];
     $name_contact     = $_POST['name_contact'];
     $lastname_contact     = $_POST['lastname_contact'];
     $email_contact    = $_POST['email_contact'];
     $phone_contact    = $_POST['phone_contact'];
     $message_contact = $_POST['message_contact'];
-    $verify_contact   = $_POST['verify_contact'];
 
     if(trim($name_contact) == '') {
     echo '<div class="error_message">You must enter your Name.</div>';
@@ -51,13 +51,7 @@ try {
     } else if(trim($message_contact) == '') {
         echo '<div class="error_message">Please enter your message.</div>';
         exit();
-    } else if(!isset($verify_contact) || trim($verify_contact) == '') {
-        echo '<div class="error_message"> Please enter the verification number.</div>';
-        exit();
-    } else if(trim($verify_contact) != '4') {
-        echo '<div class="error_message">The verification number you entered is incorrect.</div>';
-        exit();
-    }                          
+    }                       
             
     // Get the email's html content
     $email_html = file_get_contents('template-email.html');
