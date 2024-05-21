@@ -42,8 +42,8 @@ try {
     }
 
     // Set up email variables
-    $to = 'filippoleonelli1@gmail.com'; // Replace with the actual recipient email
-    $subject = 'Contact Form Submission';
+    $to = 'aganto1@libero.it'; // Replace with the actual recipient email
+    $subject = 'SITO l\'Olivara - ';
     $headers = "From: $name_contact $lastname_contact <$email_contact>\r\n";
     $headers .= "Reply-To: $email_contact\r\n";
     $message = "Name: $name_contact $lastname_contact\n";
