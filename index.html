@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="L'Olivara, un esclusivo agriturismo immerso nella tranquillità della campagna. Il tuo rifugio sereno nella Penisola Sorrentina, la fuga perfetta nella natura.">
     <title>Agriturismo L'Olivara</title>
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Agriturismo L'Olivara">
+    <meta property="og:description" content="L'Olivara, un esclusivo agriturismo immerso nella tranquillità della campagna. Il tuo rifugio sereno nella Penisola Sorrentina, la fuga perfetta nella natura.">
+    <meta property="og:image" content="https://www.olivarasorrento.com/img/preview.jpg">
+    <meta property="og:url" content="https://www.olivarasorrento.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Agriturismo L'Olivara">
+    <meta name="twitter:description" content="L'Olivara, un esclusivo agriturismo immerso nella tranquillità della campagna. Il tuo rifugio sereno nella Penisola Sorrentina, la fuga perfetta nella natura.">
+    <meta name="twitter:image" content="https://www.olivarasorrento.com/img/preview.jpg">
+    <meta name="twitter:url" content="https://www.olivarasorrento.com/">
     
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -48,12 +62,12 @@
                         <div class="logo_panel"><img src="img/logo.png" width="180" height="34" alt=""></div>
                         <nav id="mainNav">
                             <ul>
-                                <li><a href="#about" class="js-scroll-trigger animated_link">Chi siamo</a></li>
-                                <li><a href="#rooms" class="js-scroll-trigger animated_link">Le stanze</a></li>
-                                <li><a href="#gallery" class="js-scroll-trigger animated_link">Foto</a></li>
-                                <li><a href="#amenities" class="js-scroll-trigger animated_link">Attività</a></li>
-                                <li><a href="#contacts" class="js-scroll-trigger animated_link">Contatti</a></li>
-                                <li><a href="https://www.booking.com/hotel/it/olivara.it.html" target="_blank" class="js-scroll-trigger btn_1">Prenota ora</a></li>
+                                <li><a href="#about" class="js-scroll-trigger animated_link" data-key="about">Chi siamo</a></li>
+                                <li><a href="#rooms" class="js-scroll-trigger animated_link" data-key="rooms">Le stanze</a></li>
+                                <li><a href="#gallery" class="js-scroll-trigger animated_link" data-key="gallery">Foto</a></li>
+                                <li><a href="#amenities" class="js-scroll-trigger animated_link" data-key="amenities">Attività</a></li>
+                                <li><a href="#contacts" class="js-scroll-trigger animated_link" data-key="contacts">Contatti</a></li>
+                                <li><a href="https://www.booking.com/hotel/it/olivara.it.html" target="_blank" class="js-scroll-trigger btn_1" data-key="book_now">Prenota ora</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -72,20 +86,21 @@
         <div class="hero full-height jarallax" data-jarallax-video="https://vimeo.com/938297192" data-speed="0.2">
             <div class="wrapper opacity-mask d-flex align-items-center justify-content-center text-center animate_hero" data-opacity-mask="rgba(0, 0, 0, 0.5)">
                 <div class="container">
-                    <small class="slide-animated one">Azienda agricola e Bed & Breakfast</small>
-                    <h3 class="slide-animated two">Il tuo rifiugio nella Penisola Sorrentina</h3>
+                    <small class="slide-animated one" data-key="small_text">Azienda agricola e Bed & Breakfast</small>
+                    <h3 class="slide-animated two" data-key="hero_text">Il tuo rifugio nella Penisola Sorrentina</h3>
                 </div>
                 <div class="lang_wp">
                     <div class="styled-select lang-selector">
                         <select id="languageSelector">
-                            <option value="Italian" selected="">Italiano</option>
-                            <option value="English">English</option>
+                            <option value="it" selected="">Italiano</option>
+                            <option value="en">English</option>
                         </select>
                     </div>
                 </div>
                 <!-- /lang_wp -->
             </div>
         </div>
+        
         <!-- /Background Video Parallax -->
 
         <div class="bg_white" id="about">
@@ -100,12 +115,12 @@
                     <div class="col-lg-5">
                         <div class="intro">
                             <div class="title">
-                                <small>Su di noi</small>
-                                <h2>Situato sulle colline della Penisola Sorrentina</h2>
+                                <small data-key="about_small_text">Su di noi</small>
+                                <h2 data-key="about_title">Situato sulle colline della Penisola Sorrentina</h2>
                             </div>
-                            <p class="lead">il nostro agriturismo è un angolo di tranquillità in cui i ritmi della vita scorrono come un tempo, e il contatto con la natura ed il territorio non è dimenticato.</p>
-                            <p>La nostra attività agricola si concretizza nella realizzazione di prodotti tipici, ottenuti attraverso la cura e l’impegno che la terra richiede.</p>
-                            <p><em>L'Olivara</em></p>
+                            <p class="lead" data-key="about_lead">Il nostro agriturismo è un angolo di tranquillità in cui i ritmi della vita scorrono come un tempo, e il contatto con la natura ed il territorio non è dimenticato.</p>
+                            <p data-key="about_paragraph1">La nostra attività agricola si concretizza nella realizzazione di prodotti tipici, ottenuti attraverso la cura e l’impegno che la terra richiede.</p>
+                            <p><em data-key="about_paragraph2">L'Olivara</em></p>
                         </div>
                     </div>
                 </div>
@@ -114,30 +129,30 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="box_facilities no-border" data-cue="slideInUp">
-                            <img class="custom-icons" src="img\icons\icon-park.png">
-                            <h3>Private Parking</h3>
-                            <p>Spazio privato riservato ai clienti adatto a qualsiasi tipo di auto</p>
+                            <img class="custom-icons" src="img/icons/icon-park.png">
+                            <h3 data-key="facility1_title">Private Parking</h3>
+                            <p data-key="facility1_text">Spazio privato riservato ai clienti adatto a qualsiasi tipo di auto</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="box_facilities no-border" data-cue="slideInUp">
-                            <img class="custom-icons" src="img\icons\icon-lemon.png">
-                            <h3>Biologico</h3>
-                            <p>Tutti i nostri prodotti arrivano dal nostro orto biologico.</p>
+                            <img class="custom-icons" src="img/icons/icon-lemon.png">
+                            <h3 data-key="facility2_title">Biologico</h3>
+                            <p data-key="facility2_text">Tutti i nostri prodotti arrivano dal nostro orto biologico.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="box_facilities no-border" data-cue="slideInUp">
-                            <img class="custom-icons" src="img\icons\icon-paws.png">
-                            <h3>Pet Friendly</h3>
-                            <p>Ogni animale domestico è il benvenuto.</p>
+                            <img class="custom-icons" src="img/icons/icon-paws.png">
+                            <h3 data-key="facility3_title">Pet Friendly</h3>
+                            <p data-key="facility3_text">Ogni animale domestico è il benvenuto.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="box_facilities no-border" data-cue="slideInUp">
-                            <img class="custom-icons" src="img\icons\icon-chair.png">
-                            <h3>Patio Garden</h3>
-                            <p>Spazio in un patio immerso nel verde per rilassarsi.</p>
+                            <img class="custom-icons" src="img/icons/icon-chair.png">
+                            <h3 data-key="facility4_title">Patio Garden</h3>
+                            <p data-key="facility4_text">Spazio in un patio immerso nel verde per rilassarsi.</p>
                         </div>
                     </div>
                 </div>
@@ -145,6 +160,7 @@
             </div>
         </div>
         <!-- /About  -->
+        
 
          <div class="parallax_section_1 jarallax" data-jarallax data-speed="0.2">
             <img class="jarallax-img kenburns-2" src="img/parallax_bg.jpg" alt="">
@@ -163,102 +179,109 @@
 
         <div class="container margin_120_95" id="rooms">
             <div class="title mb-4">
-                <small data-cue="slideInUp">Luxury experience</small>
-                <h2 data-cue="slideInUp" data-delay="200">I nostri alloggi</h2>
+                <small data-cue="slideInUp" data-key="rooms_small_text">Luxury experience</small>
+                <h2 data-cue="slideInUp" data-delay="200" data-key="rooms_title">I nostri alloggi</h2>
             </div>
-
-            <div class="owl-carousel owl-theme carousel_item_3 rounded-img">
+        
+            <!-- /Room Carousel -->
+        
+            <div class="owl-carousel owl-theme carousel_item_4 rounded-img">
                 <div class="item" data-cues="slideInUp" data-delay="300">
-                    <a data-fslightbox="gallery_1" data-type="image" href="img/rooms/giuggiola.jpg" class="box_cat_rooms">
+                    <a data-fslightbox="room_1" data-type="image" href="img/rooms/giuggiola.jpg" class="box_cat_rooms">
                         <figure>
                             <div class="background-image" data-background="url(img/rooms/giuggiola.jpg)"></div>
                             <div class="info">
-                                <small>Appartamento</small>
-                                <h3>Giuggiola</h3>
-                                <span>con giardino privato</span>
+                                <small data-key="room1_type">Appartamento</small>
+                                <h3 data-key="room1_name">Giuggiola</h3>
+                                <span data-key="room1_description">con giardino privato</span>
                             </div>
                         </figure>
                     </a>
+                    <input class="btn_1 outline" type="button" data-key="booking_button" value="Guarda su Booking" onclick="window.location.href='https://www.booking.com/hotel/it/olivara.it.html#room_37455102';">
                 </div>
                 <!-- /item-->
                 <div class="item" data-cues="slideInUp" data-delay="400">
-                    <a data-fslightbox="gallery_1" data-type="image" href="img/rooms/melagrana.jpg" class="box_cat_rooms">
+                    <a data-fslightbox="room_2" data-type="image" href="img/rooms/melagrana.jpg" class="box_cat_rooms">
                         <figure>
                             <div class="background-image" data-background="url(img/rooms/melagrana.jpg)"></div>
                             <div class="info">
-                                <small>Appartamento</small>
-                                <h3>Melagrana</h3>
-                                <span>con balcone vista mare</span>
+                                <small data-key="room2_type">Appartamento</small>
+                                <h3 data-key="room2_name">Melagrana</h3>
+                                <span data-key="room2_description">con balcone vista mare</span>
                             </div>
                         </figure>
                     </a>
+                    <input class="btn_1 outline" type="button" data-key="booking_button" value="Guarda su Booking" onclick="window.location.href='https://www.booking.com/hotel/it/olivara.it.html#room_37455104';">
                 </div>
                 <!-- /item-->
                 <div class="item" data-cues="slideInUp" data-delay="500">
-                    <a data-fslightbox="gallery_1" data-type="image" href="img/rooms/olivabianca.jpg" class="box_cat_rooms">
+                    <a data-fslightbox="room_3" data-type="image" href="img/rooms/olivabianca.jpg" class="box_cat_rooms">
                         <figure>
                             <div class="background-image" data-background="url(img/rooms/olivabianca.jpg)"></div>
                             <div class="info">
-                                <small>Stanza</small>
-                                <h3>Oliva Bianca</h3>
-                                <span>con finestra vista mare - colazione inclusa</span>
+                                <small data-key="room3_type">Stanza</small>
+                                <h3 data-key="room3_name">Oliva Bianca</h3>
+                                <span data-key="room3_description">con finestra vista mare - colazione inclusa</span>
                             </div>
                         </figure>
                     </a>
+                    <input class="btn_1 outline" type="button" data-key="booking_button" value="Guarda su Booking" onclick="window.location.href='https://www.booking.com/hotel/it/olivara.it.html#room_37455101';">
                 </div>
                 <!-- /item-->
                 <div class="item" data-cues="slideInUp" data-delay="600">
-                    <a data-fslightbox="gallery_1" data-type="image" href="img/rooms/olivanera.jpg" class="box_cat_rooms">
+                    <a data-fslightbox="room_4" data-type="image" href="img/rooms/olivanera.jpg" class="box_cat_rooms">
                         <figure>
                             <div class="background-image" data-background="url(img/rooms/olivanera.jpg)"></div>
                             <div class="info">
-                                <small>Stanza</small>
-                                <h3>Oliva Nera</h3>
-                                <span>con terrazzo esterno - colazione inclusa</span>
+                                <small data-key="room4_type">Stanza</small>
+                                <h3 data-key="room4_name">Oliva Nera</h3>
+                                <span data-key="room4_description">con terrazzo esterno - colazione inclusa</span>
                             </div>
                         </figure>
                     </a>
+                    <input class="btn_1 outline" type="button" data-key="booking_button" value="Guarda su Booking" onclick="window.location.href='https://www.booking.com/hotel/it/olivara.it.html#room_37455104';">
                 </div>
                 <!-- /item-->
             </div>
             <!-- /carousel-->
-
+        
             <div class="title text-center mb-5 add_top_90">
-                <small data-cue="slideInUp">L'Olivara</small>
-                <h2 data-cue="slideInUp" data-delay="100">Servizi inclusi</h2>
+                <small data-cue="slideInUp" data-key="included_services_small_text">L'Olivara</small>
+                <h2 data-cue="slideInUp" data-delay="100" data-key="included_services_title">Servizi inclusi</h2>
             </div>
             <div class="row mt-4">
                 <div class="col-xl-3 col-md-6">
                     <div class="box_facilities no-border" data-cue="slideInUp">
-                        <img class="custom-icons" src="img\icons\icon-pool.png">
-                        <h3>Piscina</h3>
-                        <p>Secondo la stagione, la piscina è aperta per tutti gli ospiti.</p>
+                        <img class="custom-icons" src="img/icons/icon-pool.png">
+                        <h3 data-key="facility_pool_title">Piscina</h3>
+                        <p data-key="facility_pool_text">Secondo la stagione, la piscina è aperta per tutti gli ospiti.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <div class="box_facilities" data-cue="slideInUp">
-                        <img class="custom-icons" src="img\icons\icon-wifi.png">
-                        <h3>Wifi</h3>
-                        <p>Libero e accessibile in tutti gli spazi.</p>
+                        <img class="custom-icons" src="img/icons/icon-wifi.png">
+                        <h3 data-key="facility_wifi_title">Wifi</h3>
+                        <p data-key="facility_wifi_text">Libero e accessibile in tutti gli spazi.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <div class="box_facilities" data-cue="slideInUp">
-                        <img class="custom-icons" src="img\icons\icon-ac.png">
-                        <h3>Aria Condizionata</h3>
-                        <p>Nei nostri due appartamenti per stare al fresco anche d’estate.</p>
+                        <img class="custom-icons" src="img/icons/icon-ac.png">
+                        <h3 data-key="facility_ac_title">Aria Condizionata</h3>
+                        <p data-key="facility_ac_text">Nei nostri due appartamenti per stare al fresco anche d’estate.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <div class="box_facilities" data-cue="slideInUp">
-                        <img class="custom-icons" src="img\icons\icon-wash.png">
-                        <h3>Lavatrice</h3>
-                        <p>Servizio di lavanderia, disponibile su richiesta.</p>
+                        <img class="custom-icons" src="img/icons/icon-wash.png">
+                        <h3 data-key="facility_laundry_title">Lavatrice</h3>
+                        <p data-key="facility_laundry_text">Servizio di lavanderia, disponibile su richiesta.</p>
                     </div>
                 </div>
             </div>
             <!-- /Row -->
         </div>
+        
         <!-- /container-->
 
         <div class="marquee">
@@ -288,6 +311,7 @@
         </div> -->
         <!-- /bg_white-->
 
+        <!-- Gallery -->
         <div class="container margin_120" id="gallery">
             <div class="row">
                 <div class="title col-12 text-center mb-5">
@@ -323,6 +347,26 @@
                 <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/4.jpg"></a>
                 <a data-fslightbox="gallery_1" data-type="image" href="img/gallery/5.jpg"></a>
             </div>
+            <!-- <div class="text-center mt-5">
+                <a data-fslightbox="room_1" data-type="image" href="img/gallery/room_1/r1_1.jpg"></a>
+                <a data-fslightbox="room_1" data-type="image" href="img/gallery/room_1/r1_2.jpg"></a>
+                <a data-fslightbox="room_1" data-type="image" href="img/gallery/room_1/r1_3.jpg"></a>
+            </div>
+            <div class="text-center mt-5">
+                <a data-fslightbox="room_2" data-type="image" href="img/gallery/room_2/r2_1.jpg"></a>
+                <a data-fslightbox="room_2" data-type="image" href="img/gallery/room_2/r2_2.jpg"></a>
+                <a data-fslightbox="room_2" data-type="image" href="img/gallery/room_2/r2_3.jpg"></a>
+            </div>
+            <div class="text-center mt-5">
+                <a data-fslightbox="room_3" data-type="image" href="img/gallery/room_3/r3_1.jpg"></a>
+                <a data-fslightbox="room_3" data-type="image" href="img/gallery/room_3/r3_2.jpg"></a>
+                <a data-fslightbox="room_3" data-type="image" href="img/gallery/room_3/r3_3.jpg"></a>
+            </div>
+            <div class="text-center mt-5">
+                <a data-fslightbox="room_4" data-type="image" href="img/gallery/room_4/r4_1.jpg"></a>
+                <a data-fslightbox="room_4" data-type="image" href="img/gallery/room_4/r4_2.jpg"></a>
+                <a data-fslightbox="room_4" data-type="image" href="img/gallery/room_4/r4_3.jpg"></a>
+            </div> -->
         </div>
         <!-- /container gallery-->
 
@@ -338,9 +382,9 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="title">
-                            <small>Local Activities</small>
-                            <h3>Cooking School</h3>
-                            <p>All’Olivara potete fare un'esperienza culinaria unica alla scoperta dei sapori tipici della Campania. Potrete immergervi nella cultura gastronomica locale e imparare a preparare piatti utilizzando ingredienti provenienti direttamente dal nostro orto biologico, seguendo passo per passo le ricette che scegliamo quotidianamente per la nostra cucina. La nostra cooking school vi permetterà di scoprire i segreti della cucina tradizionale napoletana.</p>
+                            <small data-key="amenities_activities">Local Activities</small>
+                            <h3 data-key="cooking_school_title">Cooking School</h3>
+                            <p data-key="cooking_school_text">All’Olivara potete fare un'esperienza culinaria unica alla scoperta dei sapori tipici della Campania. Potrete immergervi nella cultura gastronomica locale e imparare a preparare piatti utilizzando ingredienti provenienti direttamente dal nostro orto biologico, seguendo passo per passo le ricette che scegliamo quotidianamente per la nostra cucina. La nostra cooking school vi permetterà di scoprire i segreti della cucina tradizionale napoletana.</p>
                         </div>
                     </div>
                 </div>
@@ -355,19 +399,22 @@
                     </div>
                     <div class="col-lg-5 order-lg-1">
                         <div class="title">
-                            <small>Local Activities</small>
-                            <h3>Classi di Yoga</h3>
-                            <p>I nostri spazi verdi sono i luoghi più adatti per esplorare il benessere del corpo e della mente. Con i nostri incontri di yoga guidati da istruttori esperti, avrete l'opportunità di praticare tecniche di respirazione e movimento immersi nella campagna e nella tranquillità del nostro giardino. Che siate nuovi allo yoga o praticanti esperti, le nostre lezioni sono adatte a tutti i livelli di esperienza.</p>
+                            <small data-key="amenities_activities">Local Activities</small>
+                            <h3 data-key="yoga_classes_title">Classi di Yoga</h3>
+                            <p data-key="yoga_classes_text">I nostri spazi verdi sono i luoghi più adatti per esplorare il benessere del corpo e della mente. Con i nostri incontri di yoga guidati da istruttori esperti, avrete l'opportunità di praticare tecniche di respirazione e movimento immersi nella campagna e nella tranquillità del nostro giardino. Che siate nuovi allo yoga o praticanti esperti, le nostre lezioni sono adatte a tutti i livelli di esperienza.</p>
                         </div>
                     </div>
                 </div>
                 <!-- /row-->
+            </div>
+        </div>
+        
                 
                 <hr class="more_margin">
 
                 <div class="row justify-content-center">
                     <div class="title text-center mb-5">
-                        <h2 data-cue="slideInUp" data-delay="100">Escursioni in zona</h2>
+                        <h2 data-cue="slideInUp" data-delay="100" data-key="excursions_title">Escursioni in zona</h2>
                     </div>
                     <div class="col-lg-8">
                         <div role="tablist" class="mb-5 accordion" id="accordion_1">
@@ -375,12 +422,12 @@
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0">
                                         <a class="collapsed" data-bs-toggle="collapse" href="#collapseOne_product" aria-expanded="false">
-                                            <i class="indicator bi-plus-lg"></i>Come arrivare a Capri
+                                            <i class="indicator bi-plus-lg"></i><span data-key="excursion1_title">Come arrivare a Capri</span>
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseOne_product" class="collapse" role="tabpanel" data-bs-parent="#accordion_1">
-                                    <div class="card-body">
+                                    <div class="card-body" data-key="excursion1_text">
                                         <p>Il modo più comune per raggiungere Capri è prendere un traghetto o un aliscafo, che partono entrambi dal porto di Sorrento. Ci sono diverse compagnie che offrono servizi di traghetto tra Sorrento e Capri, con partenze frequenti durante la giornata. Il tragitto dura circa 20-30 minuti, a seconda del tipo di traghetto. È consigliabile controllare gli orari e prenotare i biglietti in anticipo, specialmente durante i periodi di punta o durante la stagione turistica.</p>
                                         <p>Per un'esperienza più esclusiva e personalizzata, è possibile noleggiare un'imbarcazione privata da Sorrento per raggiungere Capri. Questa opzione può essere più costosa, ma offre flessibilità e comfort. Ci sono anche dei tour di gruppo che offrono la possibilità di circumnavigare l’isola con una piccola imbarcazione, permettendo di visitare le zone di costa dell’isola, compresi i suoi famosi faraglioni.</p>
                                         <p>Una volta arrivati a Capri, potrete esplorare l'isola e le sue attrazioni, come la Grotta Azzurra, i Giardini di Augusto e la famosa Piazzetta. Ricordatevi di verificare gli orari di ritorno dei traghetti o degli aliscafi per tornare a Sorrento e pianificare di conseguenza la vostra giornata sull'isola.</p>
@@ -392,12 +439,12 @@
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0">
                                         <a class="collapsed" data-bs-toggle="collapse" href="#collapseTwo_product" aria-expanded="false">
-                                            <i class="indicator bi-plus-lg"></i>Come arrivare a Positano
+                                            <i class="indicator bi-plus-lg"></i><span data-key="excursion2_title">Come arrivare a Positano</span>
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseTwo_product" class="collapse" role="tabpanel" data-bs-parent="#accordion_1">
-                                    <div class="card-body">
+                                    <div class="card-body" data-key="excursion2_text">
                                         <p>La modalità più conveniente per raggiungere Positano da Sorrento è prendere l'autobus SITA. Questo servizio offre collegamenti regolari tra le due località lungo la strada costiera. Gli autobus partono dalla stazione degli autobus di Sorrento, con una fermata a poca distanza dall’agriturismo, e impiegano circa 40-50 minuti per raggiungere Positano, a seconda del traffico. È una buona opzione per coloro che preferiscono un viaggio comodo e panoramico lungo la costa.</p>
                                         <p>Un'altra opzione per raggiungere Positano da Sorrento è prendere un traghetto. Alcune compagnie marittime offrono servizi di traghetto tra Sorrento e Positano, che offrono una vista spettacolare sulla costa amalfitana durante il viaggio. Questa opzione può essere più rapida rispetto all'autobus, ma i servizi di traghetto potrebbero essere meno frequenti; quindi, è consigliabile verificare gli orari in anticipo.</p>
                                         <p>Una volta arrivati a Positano, potrete godervi le sue incantevoli spiagge, i pittoreschi vicoli e i panorami mozzafiato sulla costa. Per un'esperienza unica e panoramica, potete considerare di fare una parte o l'intero percorso del Sentiero degli Dei. Questo sentiero escursionistico che parte dalla frazione di Nocelle, poco al di sopra del centro di Positano, offre una vista mozzafiato sulla costa amalfitana mentre attraversate antichi sentieri e boschi.</p>
@@ -409,12 +456,12 @@
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0">
                                         <a class="collapsed" data-bs-toggle="collapse" href="#collapseThree_product" aria-expanded="false">
-                                            <i class="indicator bi-plus-lg"></i>Come arrivare a Pompei 
+                                            <i class="indicator bi-plus-lg"></i><span data-key="excursion3_title">Come arrivare a Pompei</span>
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseThree_product" class="collapse" role="tabpanel" data-bs-parent="#accordion_1">
-                                    <div class="card-body">
+                                    <div class="card-body" data-key="excursion3_text">
                                         <p>La modalità più conveniente per raggiungere Pompei da Sorrento è prendere il treno della linea Circumvesuviana in direzione Napoli. La stazione ferroviaria di Sorrento è collegata alla rete Circumvesuviana, che offre servizi ferroviari tra Sorrento e Napoli, passando per Pompei. Dalla stazione di Piano di Sorrento, prendete il treno in direzione di Napoli e scendete alla stazione di Pompei Scavi-Villa dei Misteri. Questo viaggio in treno dura circa 30-40 minuti, e una volta scesi vi troverete esattamente di fronte all’ingresso degli scavi. Assicuratevi di controllare gli orari dei treni in anticipo, poiché la frequenza può variare durante la giornata.</p>
                                         <p>Se preferite viaggiare in autobus, potete prendere un autobus diretto da Sorrento a Pompei. Ci sono diverse compagnie che offrono questo servizio, con partenze regolari durante il giorno. Tuttavia, tenete presente che il tempo di percorrenza può essere più lungo rispetto al treno, a causa del traffico stradale e delle fermate lungo il percorso.</p>
                                         <p>Una volta arrivati a Pompei, avrete l'opportunità di esplorare le antiche rovine, uno dei siti archeologici più famosi al mondo, che offre uno sguardo unico sulla vita quotidiana dell'antica città romana sepolta dall'eruzione del Vesuvio nel 79 d.C.</p>
@@ -426,12 +473,12 @@
                                 <div class="card-header" role="tab">
                                     <h5 class="mb-0">
                                         <a class="collapsed" data-bs-toggle="collapse" href="#collapseFour_product" aria-expanded="false">
-                                            <i class="indicator bi-plus-lg"></i>Come arrivare a Napoli
+                                            <i class="indicator bi-plus-lg"></i><span data-key="excursion4_title">Come arrivare a Napoli</span>
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseFour_product" class="collapse" role="tabpanel" data-bs-parent="#accordion_1">
-                                    <div class="card-body">
+                                    <div class="card-body" data-key="excursion4_text">
                                         <p>La modalità più comune e conveniente per viaggiare da Sorrento a Napoli è prendere il treno della linea Circumvesuviana. La stazione ferroviaria di Sorrento è collegata alla rete ferroviaria Circumvesuviana, che offre servizi regolari tra Sorrento e Napoli. Basta prendere il treno in direzione di Napoli e scendere alla stazione terminale, che è Napoli Centrale (Stazione Garibaldi). Il viaggio in treno dura circa 1 ora e offre una panoramica del paesaggio costiero durante il tragitto.</p>
                                         <p>Un'opzione veloce e panoramica per raggiungere Napoli da Sorrento è prendere un aliscafo. Alcune compagnie marittime offrono servizi di aliscafo tra Sorrento e Napoli, che offrono un tempo di percorrenza più breve rispetto ai traghetti e agli autobus. Gli aliscafi sono imbarcazioni ad alta velocità e il viaggio solitamente dura circa 30-40 minuti, a seconda delle condizioni del mare e della compagnia marittima. Questa opzione è ideale per coloro che desiderano risparmiare tempo e godersi una vista panoramica della costa durante il tragitto.</p>
                                     </div>
@@ -442,6 +489,7 @@
                         <!-- /accordion -->
                     </div>
                 </div>
+                
                 <!-- /row-->
             </div>
             <!-- /container-->
@@ -454,10 +502,10 @@
                     <div data-cue="slideInUp">
                         <div class="title">
                             <small>L'Olivara</small>
-                            <h2>Indirizzo</h2>
+                            <h2 data-key="address">Indirizzo</h2>
                         </div>
                         <p> Via Galatea, 16, 80063<br>Piano di Sorrento NA</p>
-                        <div class="phone_element no_borders"><a href="tel://423424234"><i class="bi bi-telephone"></i><span><em>Info e prenotazioni</em>+39 081 808 3742</span></a></div>
+                        <div class="phone_element no_borders"><a href="tel://423424234"><i class="bi bi-telephone"></i><span><em data-key="info">Info e prenotazioni</em>+39 081 808 3742</span></a></div>
                         <!-- <div class="phone_element no_borders"><a href="mailto:info@domain.com"><i class="bi bi-envelope"></i><span><em>Questions</em>info@domain.com</span></a></div> -->
                         <div class="social mt-1">
                             <ul>
@@ -488,13 +536,13 @@
                                         <div class="col-sm-6">
                                             <div class="form-floating mb-4">
                                                 <input class="form-control" type="text" id="name_contact" name="name_contact" placeholder="Name">
-                                                <label for="name_contact">Nome</label>
+                                                <label for="name_contact" data-key="name">Nome</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating mb-4">
                                                 <input class="form-control" type="text" id="lastname_contact" name="lastname_contact" placeholder="Last Name">
-                                                <label for="lastname_contact">Cognome</label>
+                                                <label for="lastname_contact" data-key="surname">Cognome</label>
                                             </div>
                                         </div>
                                     </div>
@@ -509,14 +557,14 @@
                                         <div class="col-sm-6">
                                             <div class="form-floating mb-4">
                                                 <input class="form-control" type="text" id="phone_contact" name="phone_contact" placeholder="Telephone">
-                                                <label for="phone_contact">Numero di telefono</label>
+                                                <label for="phone_contact" data-key="phone">Numero di telefono</label>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- /row -->
                                     <div class="form-floating mb-4">
                                         <textarea class="form-control" placeholder="Message" id="message_contact" name="message_contact"></textarea>
-                                        <label for="message_contact">Chiedici qualcosa...</label>
+                                        <label for="message_contact" data-key="ask">Chiedici qualcosa...</label>
                                     </div>
                                     <hr>
                                     <div class="row">
@@ -575,16 +623,6 @@
     <script src="phpmailer/validate.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-    <script>
-        document.getElementById('languageSelector').addEventListener('change', function() {
-            var selectedLanguage = this.value;
-            if (selectedLanguage === 'Italian') {
-                window.location.href = 'index.html'; // Sostituisci con l'URL della tua pagina in italiano
-            } else if (selectedLanguage === 'English') {
-                window.location.href = 'index_en.html'; // Sostituisci con l'URL della tua pagina in inglese
-            }
-        });
-    </script>
 
 </body>
 </html>

@@ -188,6 +188,30 @@
 	    }
 	});
 
+	// Carousel items 4
+	$('.carousel_item_4').owlCarousel({    
+	    loop:false,
+	    margin:15,
+	    nav:true,
+	    dots:false,
+	    center:false,
+	    navText: ["<i class='bi bi-arrow-left-short'></i>","<i class='bi bi-arrow-right-short'></i>"],
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:2
+	        },
+	        1000:{
+	            items:3
+	        },
+	        1000:{
+	            items:4
+	        }
+	    }
+	});
+
 	// Carousel testimonials
 	$('.carousel_testimonials').owlCarousel({
 	 	items:1,

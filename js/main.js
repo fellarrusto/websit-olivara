@@ -1,12 +1,20 @@
-// const reviewComponent = new ReviewComponent({
-//     imageSrc: "img/testimonial_1.jpg",
-//     name: "Roberta",
-//     date: "12 Oct",
-//     reviewText: "Mea ad postea meliore fuisset. Timeam repudiare id eum, ex paulo dictas elaboraret sed, mel cu unum nostrud."
-// });
+function loadTranslations(language, callback) {
+    fetch(`trs/${language}.json`)
+      .then(response => response.json())
+      .then(data => {
+        callback(data);
+      });
+  }
 
+  function changeLanguage(language) {
+    loadTranslations(language, translations => {
+      document.querySelectorAll('[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        el.innerHTML = translations[key];
+      });
+    });
+  }
 
-// reviewComponent.inject('#reviews-container');
-// reviewComponent.inject('#reviews-container');
-// reviewComponent.inject('#reviews-container');
-// reviewComponent.inject('#reviews-container');
+document.getElementById('languageSelector').addEventListener('change', function() {
+    changeLanguage(this.value)
+});
