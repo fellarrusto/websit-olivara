@@ -471,7 +471,7 @@ a.animated_link.active::before {
 /* Header */
 header {
   padding: 20px 0;
-  width: 100%;
+  width: 100vw;
   z-index: 999;
   position: fixed;
   left: 0;
