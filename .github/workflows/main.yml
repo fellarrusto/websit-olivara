@@ -14,4 +14,4 @@ jobs:
         server: ftp.olivarasorrento.com
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-        server-dit: /www.olivarasorrento.com/
+        server-dir: ./www.olivarasorrento.com/
